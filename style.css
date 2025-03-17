@@ -51,6 +51,7 @@ picture {
   margin-bottom: 16px;
   position: relative;
   align-items: flex-end;
+  box-shadow: 0 0 10px #6a6969;
 
   h1 {
     position: relative;
@@ -65,13 +66,13 @@ picture {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  box-shadow: 0 0 5px #cfcfcf;
 }
 
 .social-links {
   display: flex;
   justify-content: center;
   gap: 16px;
+  margin-top: 16px;
 }
 
 .link-icon {
@@ -82,7 +83,7 @@ picture {
 /*MAIN*/
 
 main {
-  padding: 16px;
+  padding: 64px 16px;
 
   & h2 {
     text-align: center;
@@ -146,4 +147,35 @@ main {
 
 .project-info {
   padding: 16px;
+}
+
+/*FOOTER*/
+
+footer {
+  background-color: var(--bg-main);
+  color: #fff;
+}
+
+.cta {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 64px;
+
+  & h2 {
+    text-align: center;
+  }
+
+  & .link-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.footer-img {
+  background-image: url(assets/placeholder.webp);
+  width: 100%;
+  height: 500px;
+  background-size: cover;
 }
