@@ -36,6 +36,8 @@ ul {
 }
 
 .about__body {
+  max-width: 1000px;
+
   & h2 {
     text-align: center;
 
@@ -117,19 +119,55 @@ ul {
       width: 350px;
       height: 350px;
     }
+  }
 
-    .title {
-      position: absolute;
-      right: -250px;
-      top: -15px;
+  .title {
+    position: absolute;
+    right: -250px;
+    top: -15px;
+  }
+}
+
+@media (width >= 1000px) {
+  .about {
+    background: linear-gradient(170deg, var(--bg-main) 50%, #fff 50%);
+  }
+
+  .about__body {
+    margin: 0;
+    padding: 32px;
+    height: 350px;
+    margin-top: 32px;
+    position: relative;
+
+    & h2 {
+      text-align: left;
     }
+
+    & picture {
+      width: 400px;
+      height: 150%;
+      margin: -64px 16px 0 -32px;
+      display: flex;
+    }
+
+    & .social-links {
+      display: flex;
+      position: absolute;
+      right: 32px;
+      bottom: 16px;
+    }
+  }
+
+  .title {
+    position: static;
   }
 }
 
 /*MAIN*/
 
 main {
-  padding: 64px 32px 128px 32px;
+  padding: 64px 64px 128px 64px;
 
   & h2 {
     text-align: center;
@@ -141,7 +179,7 @@ main {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   place-items: center;
   gap: 64px 32px;
 }
@@ -151,7 +189,6 @@ main {
   flex-direction: column;
   border: 1px solid #cfcfcf;
   box-shadow: 2px 2px 5px #cfcfcf;
-  max-width: 350px;
   height: 450px;
 
   & header {
@@ -199,6 +236,12 @@ main {
 @media (width >= 500px) {
   main h2 {
     text-align: left;
+  }
+}
+
+@media (width >= 1000px) {
+  main {
+    padding-top: 128px;
   }
 }
 
