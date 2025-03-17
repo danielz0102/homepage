@@ -22,22 +22,26 @@
   </head>
   <body>
     <header class="about">
-      <picture>
-        <img
-          class="header-img"
-          src="assets/placeholder.webp"
-          alt=""
-          aria-hidden
-        />
-        <h1>Ashley Williams</h1>
-      </picture>
-      <h2>About me</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolor
-        esse asperiores veritatis fugiat deleniti repellat a reprehenderit
-        repudiandae, nihil dolorum autem quisquam corporis possimus provident
-        quia at minus nam?
-      </p>
+      <div class="about__body">
+        <picture>
+          <img
+            class="about__img"
+            src="assets/placeholder.webp"
+            alt=""
+            aria-hidden
+          />
+          <h1 class="title">Ashley Williams</h1>
+        </picture>
+        <h2>About me</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis
+          hic, eius laudantium iusto quas amet cum fugit sit aliquam harum quam
+          vitae excepturi rerum recusandae accusantium nostrum voluptas in
+          earum? Minima repudiandae labore possimus rem culpa ex eligendi
+          laudantium mollitia reiciendis, minus eaque asperiores deserunt,
+          magnam cupiditate dolore?
+        </p>
+      </div>
       <ul class="social-links">
         <li>
           <a href="#"
@@ -60,13 +64,13 @@
       <h2>My work</h2>
       <section class="projects">
         <article class="project">
-          <div class="screenshot" aria-hidden>
+          <div class="project__screenshot" aria-hidden>
             <span>screenshot of project</span>
           </div>
-          <div class="project-info">
+          <div class="project__info">
             <header>
               <h3>Project name</h3>
-              <ul class="options">
+              <ul class="project__options">
                 <li>
                   <a href="#"
                     ><img
@@ -91,13 +95,13 @@
           </div>
         </article>
         <article class="project">
-          <div class="screenshot" aria-hidden>
+          <div class="project__screenshot" aria-hidden>
             <span>screenshot of project</span>
           </div>
-          <div class="project-info">
+          <div class="project__info">
             <header>
               <h3>Project name</h3>
-              <ul class="options">
+              <ul class="project__options">
                 <li>
                   <a href="#"
                     ><img
@@ -122,13 +126,13 @@
           </div>
         </article>
         <article class="project">
-          <div class="screenshot" aria-hidden>
+          <div class="project__screenshot" aria-hidden>
             <span>screenshot of project</span>
           </div>
-          <div class="project-info">
+          <div class="project__info">
             <header>
               <h3>Project name</h3>
-              <ul class="options">
+              <ul class="project__options">
                 <li>
                   <a href="#"
                     ><img
@@ -153,13 +157,13 @@
           </div>
         </article>
         <article class="project">
-          <div class="screenshot" aria-hidden>
+          <div class="project__screenshot" aria-hidden>
             <span>screenshot of project</span>
           </div>
-          <div class="project-info">
+          <div class="project__info">
             <header>
               <h3>Project name</h3>
-              <ul class="options">
+              <ul class="project__options">
                 <li>
                   <a href="#"
                     ><img
@@ -184,13 +188,13 @@
           </div>
         </article>
         <article class="project">
-          <div class="screenshot" aria-hidden>
+          <div class="project__screenshot" aria-hidden>
             <span>screenshot of project</span>
           </div>
-          <div class="project-info">
+          <div class="project__info">
             <header>
               <h3>Project name</h3>
-              <ul class="options">
+              <ul class="project__options">
                 <li>
                   <a href="#"
                     ><img
@@ -215,13 +219,13 @@
           </div>
         </article>
         <article class="project">
-          <div class="screenshot" aria-hidden>
+          <div class="project__screenshot" aria-hidden>
             <span>screenshot of project</span>
           </div>
-          <div class="project-info">
+          <div class="project__info">
             <header>
               <h3>Project name</h3>
-              <ul class="options">
+              <ul class="project__options">
                 <li>
                   <a href="#"
                     ><img
@@ -264,10 +268,22 @@
         </address>
         <address>
           <p>
-            <small>555-555-5555</small>
+            <small
+              ><img
+                class="address-icon"
+                src="assets/phone.svg"
+                alt="Phone"
+              />555-555-5555</small
+            >
           </p>
           <p>
-            <small>ashleywilliams.is.not.real@gmail.com</small>
+            <small
+              ><img
+                class="address-icon"
+                src="assets/email.svg"
+                alt="Email"
+              />ashleywilliams.is.not.real@gmail.com</small
+            >
           </p>
         </address>
         <ul class="social-links">
