@@ -20,6 +20,8 @@ h1,
 h2,
 h3 {
   font-family: "Playfair Display", serif;
+  font-weight: normal;
+  font-size: 2rem;
 }
 
 ul {
@@ -28,7 +30,7 @@ ul {
 
 /*HEADER*/
 
-header {
+.about {
   padding: 16px;
   background: linear-gradient(160deg, var(--bg-main) 50%, #fff 50%);
 
@@ -52,6 +54,7 @@ picture {
 
   h1 {
     position: relative;
+    font-weight: bold;
     z-index: 1;
     margin: 16px;
   }
@@ -74,4 +77,73 @@ picture {
 .link-icon {
   width: 25px;
   height: 25px;
+}
+
+/*MAIN*/
+
+main {
+  padding: 16px;
+
+  & h2 {
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 2rem;
+    font-weight: normal;
+  }
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #cfcfcf;
+  box-shadow: 2px 2px 5px #cfcfcf;
+  max-width: 500px;
+  height: 450px;
+
+  & header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-left: 16px;
+
+    & h3 {
+      font-weight: normal;
+      font-size: 1.25rem;
+    }
+  }
+
+  & p {
+    color: var(--text-secondary);
+  }
+}
+
+.options {
+  display: flex;
+  gap: 16px;
+  float: right;
+}
+
+.screenshot {
+  height: 60%;
+  background-color: #578157;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & span {
+    color: #fff;
+    font-size: 2rem;
+    font-family: "Pairfair Display", serif;
+  }
+}
+
+.project-info {
+  padding: 16px;
 }
